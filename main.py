@@ -1,6 +1,5 @@
 from classes.system import System
 from pipr_24z_pgierzat.iomodule import load_config
-import math
 import argparse
 import sys
 
