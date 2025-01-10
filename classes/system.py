@@ -180,10 +180,12 @@ class System:
 
                     if r < self.central_object().radius():
                         print(
-                            f"Krok {step}: Obiekt {i} w kolizji z centralnym!"
+                            f"Krok {step}: Obiekt {i+1} w kolizji z "
+                            f"centralnym!"
                         )
                         collision_report.append(
-                            f"Krok {step}: Obiekt {i} w kolizji z centralnym!"
+                            f"Krok {step}: Obiekt {i+1} w kolizji z "
+                            f"centralnym!"
                         )
                         to_remove.append(i)
                         continue
@@ -201,14 +203,14 @@ class System:
                     ax = force * dx / distance / obj.mass()
                     ay = force * dy / distance / obj.mass()
 
-                    print(f"Krok {step}: Obiekt {i} - ax: {ax}, ay: {ay}")
+                    print(f"Krok {step}: Obiekt {i+1} - ax: {ax}, ay: {ay}")
 
                     new_vx = obj.velocity_x() + ax * self.dt()
                     new_vy = obj.velocity_y() + ay * self.dt()
                     obj.set_vel_x(new_vx)
                     obj.set_vel_y(new_vy)
 
-                    print(f"Krok {step}: Obiekt {i} - vx: {new_vx}, "
+                    print(f"Krok {step}: Obiekt {i+1} - vx: {new_vx}, "
                           f"vy: {new_vy}")
 
                     new_x = obj.pos_x() + new_vx * self.dt()
@@ -216,7 +218,8 @@ class System:
                     obj.set_pos_x(new_x)
                     obj.set_pos_y(new_y)
 
-                    print(f"Krok {step}: Obiekt {i} - x: {new_x}, y: {new_y}")
+                    print(f"Krok {step}: Obiekt {i+1} - x: {new_x}, "
+                          f"y: {new_y}")
 
                     trajectories[i]["x"].append(new_x)
                     trajectories[i]["y"].append(new_y)

@@ -1,5 +1,5 @@
 from classes.base_object import BaseObject
-from pipr_24z_pgierzat.errors import NegativeRadiusError, NegativeMassError
+from errors import NegativeRadiusError, NegativeMassError
 
 
 class CentralObject(BaseObject):
@@ -9,6 +9,7 @@ class CentralObject(BaseObject):
     Attributes:
         radius (float): radius of the object.
     """
+
     def __init__(self, mass, radius, pos_x=0, pos_y=0):
         """
         Initialize the object with given mass, radius and position = 0, 0.

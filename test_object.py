@@ -1,5 +1,5 @@
 from classes.object import Object
-from pipr_24z_pgierzat.errors import NegativeMassError
+from errors import NegativeMassError
 import pytest
 
 

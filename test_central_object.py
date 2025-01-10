@@ -1,5 +1,5 @@
 from classes.central_object import CentralObject
-from pipr_24z_pgierzat.errors import NegativeRadiusError
+from errors import NegativeRadiusError
 import pytest
 
 

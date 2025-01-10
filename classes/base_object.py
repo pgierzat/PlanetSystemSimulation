@@ -1,4 +1,4 @@
-from pipr_24z_pgierzat.errors import NegativeMassError
+from errors import NegativeMassError
 
 
 class BaseObject:
@@ -10,6 +10,7 @@ class BaseObject:
         pos_y (float): y coordinate of the object.
         mass (float): mass of the object
     """
+
     def __init__(self, pos_x, pos_y, mass):
         """
         Initialize the object with given position and mass.
