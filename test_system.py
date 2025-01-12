@@ -7,11 +7,11 @@ from classes.object import Object
 @pytest.fixture
 def config():
     return {
-        "central_mass": 1.0,  # Masa obiektu centralnego [kg]
-        "central_radius": 1.0,  # Promień obiektu centralnego [m]
-        "scale": 1.0,  # Liczba metrów na piksel
-        "image_size": (800, 800),  # Rozmiar obrazu w pikselach
-        "time_step": 0.1,  # Odstęp czasowy (1 godzina) [s]
+        "central_mass": 1.0,
+        "central_radius": 1.0,
+        "scale": 1.0,
+        "image_size": (800, 800),
+        "time_step": 0.1,
         "objects": [
             {
                 "x": 0,

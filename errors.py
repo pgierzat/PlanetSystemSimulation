@@ -12,3 +12,7 @@ class CreationError(Exception):
 
 class SystemCoordsOccupied(Exception):
     pass
+
+
+class MalformedDataError(Exception):
+    pass
