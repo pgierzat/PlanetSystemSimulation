@@ -1,0 +1,11 @@
+{
+    "central_mass": 1e+22,
+    "central_radius": 6371.0,
+    "scale": 10000.0,
+    "image_size": [
+        1000,
+        2000
+    ],
+    "time_step": 10.0,
+    "objects": []
+}
